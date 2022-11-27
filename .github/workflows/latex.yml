@@ -1,6 +1,6 @@
 
 name: Compile and push PDF File
-run-name: Compile and push PDF File
+# run-name: Compile and push PDF File             !outdated
 on: [push]
 jobs:
   Explore-GitHub-Actions:
