@@ -21,3 +21,4 @@ clean:
 	rm *.bbl
 	rm *.log
 	rm *.pdf
+	rm *.txt
