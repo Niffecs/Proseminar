@@ -19,12 +19,12 @@ jobs:
       - name: Compile Latex File
         uses: xu-cheng/latex-action@v2
         with:
-          working_directory: ./GPT-3
+          working_directory: ./GPT-3/DE
           root_file: ./main.tex
 
       - name: Rename PDF
         run: |
-          mv ./GPT-3/EN/main.pdf Proseminar_ProbaData_GPT3_DE.pdf
+          mv ./GPT-3/DE/main.pdf Proseminar_ProbaData_GPT3_DE.pdf
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
