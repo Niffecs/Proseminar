@@ -21,7 +21,7 @@ Some examples of the types of applications that probabilistic databases are used
 These are just a few examples of the types of applications that probabilistic databases can be used for. There are many other possible uses for probabilistic databases in a wide variety of domains.
 
 
-## Are there any current applications with probabilistic databases?
+## What are the roles of graphs in probabilistic databases?
 
 Graphs play a key role in probabilistic databases by providing a way to represent and reason about the relationships between random variables. In a probabilistic database, a graph is a set of nodes, which represent random variables, and edges, which represent the relationships between the random variables.
 
@@ -30,3 +30,24 @@ The structure of the graph in a probabilistic database can provide important inf
 In addition to representing dependencies and independencies between random variables, the structure of the graph in a probabilistic database can also be used to perform probabilistic inference, which is the process of using the known values of some random variables to reason about the likely values of other random variables. This can be useful for making predictions, making decisions, and answering queries about the data in the probabilistic database.
 
 Overall, the use of graphs in probabilistic databases is an important aspect of representing and reasoning about uncertain or incomplete information. It allows probabilistic databases to represent the dependencies and independencies between random variables, and to perform probabilistic inference to make predictions, make decisions, and answer queries about the data in the database.
+
+
+## How can I create a probabilistic database ? 
+Creating a probabilistic database requires a deep understanding of probability theory, database systems, and software engineering. It is not a task that can be easily explained in a brief answer, and it typically requires significant expertise and experience in these areas.
+
+Here are some general steps that would be involved in creating a probabilistic database:
+
+1. Define the problem or application that the probabilistic database will be used for, and identify the relevant data and variables that need to be represented in the database.
+
+2. Determine the probabilistic model that will be used to represent the uncertain or incomplete information in the database. This may involve defining the random variables and their dependencies, as well as the probability distributions that will be used to represent their uncertainty.
+
+3. Design the structure of the graph that will be used to represent the relationships between the random variables in the database. This may involve defining the nodes and edges of the graph, as well as any additional metadata that will be associated with the nodes and edges.
+
+4. Implement the probabilistic database using a database management system or other suitable software platform. This may involve writing database queries, data manipulation and transformation functions, and other code to create and manage the probabilistic database.
+
+5. Test and validate the probabilistic database to ensure that it is functioning properly and providing the desired results. This may involve comparing the output of the probabilistic database to known ground truths, or using other methods to evaluate the accuracy and reliability of the database.
+
+6. Deploy the probabilistic database in the intended application or environment, and monitor and maintain it as needed to ensure that it continues to function properly and provide the desired results.
+
+
+These are just some of the general steps involved in creating a probabilistic database. The specific steps and details will vary depending on the particular problem or application that the database is being used for. It is important to have a thorough understanding of probability theory, database systems, and software engineering in order to create a probabilistic database that is effective and reliable.
