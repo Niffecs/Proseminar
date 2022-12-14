@@ -1,5 +1,5 @@
 
-name: GPT-3
+name: GPT-3-DE
 # run-name: Compile and push PDF File             !outdated
 on: [push]
 jobs:
@@ -24,13 +24,13 @@ jobs:
 
       - name: Rename PDF
         run: |
-          mv ./GPT-3/main.pdf GPT-3_Probabilistic_Database.pdf
+          mv ./GPT-3/EN/main.pdf Proseminar_ProbaData_GPT3_DE.pdf
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
-          name: GPT-3_Probabilistic_Database
-          path: GPT-3_Probabilistic_Database.pdf
+          name: Proseminar_ProbaData_GPT3_DE
+          path: Proseminar_ProbaData_GPT3_DE.pdf
 
       - name: Load Python 3.10
         uses: actions/setup-python@v4
@@ -42,7 +42,7 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_PWD: ${{ secrets.FTP_PWD }}
           FTP_USER: ${{ secrets.FTP_USER }}
-        run: python upload.py GPT-3_Probabilistic_Database.pdf
+        run: python upload.py Proseminar_ProbaData_GPT3_DE.pdf
 
       - name: Git Clean
         run: git clean -fX
