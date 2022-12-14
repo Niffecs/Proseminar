@@ -51,3 +51,16 @@ Here are some general steps that would be involved in creating a probabilistic d
 
 
 These are just some of the general steps involved in creating a probabilistic database. The specific steps and details will vary depending on the particular problem or application that the database is being used for. It is important to have a thorough understanding of probability theory, database systems, and software engineering in order to create a probabilistic database that is effective and reliable.
+
+
+## What programs can be used to create a probabilistic database?
+
+There are several different programs that can be used to create a probabilistic database, depending on the specific requirements and needs of the application. Some commonly used programs and platforms for creating probabilistic databases include:
+
+- Database management systems (DBMS): A DBMS is a software platform that provides the functions and tools needed to create and manage a database. Many DBMSs have built-in support for probabilistic data and queries, and can be used to create and manage probabilistic databases. Examples of DBMSs that can be used for probabilistic databases include SQLite, PostgreSQL, and MariaDB.
+
+- Probabilistic programming languages: A probabilistic programming language is a specialized programming language that is designed for representing and reasoning about uncertain or incomplete information using probability theory. Many probabilistic programming languages have built-in support for creating and manipulating probabilistic databases, and can be used to create and manage probabilistic databases. Examples of probabilistic programming languages include Church, Anglican, and Figaro.
+
+- Machine learning and data science platforms: Some machine learning and data science platforms, such as TensorFlow and PyTorch, provide tools and libraries for creating and managing probabilistic databases. These platforms can be used to create probabilistic databases as part of a larger machine learning or data science workflow.
+
+These are just a few examples of the programs and platforms that can be used to create probabilistic databases. There are many other possible options, and the best choice will depend on the specific requirements and needs of the application. It is important to carefully consider the available options and select the program or platform that is best suited for the intended application.
