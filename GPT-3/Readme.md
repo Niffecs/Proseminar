@@ -64,3 +64,7 @@ There are several different programs that can be used to create a probabilistic 
 - Machine learning and data science platforms: Some machine learning and data science platforms, such as TensorFlow and PyTorch, provide tools and libraries for creating and managing probabilistic databases. These platforms can be used to create probabilistic databases as part of a larger machine learning or data science workflow.
 
 These are just a few examples of the programs and platforms that can be used to create probabilistic databases. There are many other possible options, and the best choice will depend on the specific requirements and needs of the application. It is important to carefully consider the available options and select the program or platform that is best suited for the intended application.
+
+
+## Are there any practical examples of probabilistic databases?
+
