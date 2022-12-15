@@ -23,7 +23,7 @@
 % \pagestyle{scrheadings}
 
 % Kopf- und Fußzeile
-%\clearscrheadfoot 
+\clearscrheadfoot 
 \chead{\headmark} % automatischen Kapitelnamen rein
 \ofoot[\pagemark]{\pagemark} % oben rechts Seitenzahl laut Richtlinie
 \ifoot{\invnr} % automatischen Kapitelnamen rein
@@ -60,20 +60,10 @@
 \newpage
 
 \pagenumbering{arabic}
-\input{inc/summary.tex}
-\input{inc/idk.tex}
-\input{inc/what.tex}
-\input{inc/used.tex}
-\input{inc/role.tex}
-\input{inc/create.tex}
-\input{inc/programms.tex}
-\input{inc/algebra.tex}
-\input{inc/literatur.tex}
-\input{inc/advance.tex}
-\input{inc/types.tex}
-\input{inc/conclusion.tex}
 
 
+\include{inc/start.tex}
+\include{inc/anwendungsgebiete.tex}
 
 % Literaturverzeichniss
 \newpage
