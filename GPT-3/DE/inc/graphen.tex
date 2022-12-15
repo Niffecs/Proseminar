@@ -1,0 +1,74 @@
+\chapter{Graphen}
+\section{Rolle der Graphen}
+Graphen können in probabilistischen Datenbanken eine wichtige Rolle spielen, indem sie dazu verwendet werden, Wahrscheinlichkeitsverteilungen und Beziehungen zwischen verschiedenen Entitäten in der Datenbank zu modellieren. In einer probabilistischen Datenbank können Graphen verwendet werden, um die Wahrscheinlichkeit von Ereignissen oder Zuständen zu berechnen und die Beziehungen zwischen verschiedenen Entitäten zu visualisieren.
+
+Zum Beispiel könnte ein Graph in einer probabilistischen Datenbank verwendet werden, um die Wahrscheinlichkeit von Krankheiten zu berechnen, indem er die Beziehungen zwischen verschiedenen Symptomen, Risikofaktoren und Diagnosen darstellt. Ein Graph könnte auch verwendet werden, um die Wahrscheinlichkeit von Wetterbedingungen zu berechnen, indem er die Beziehungen zwischen verschiedenen Wetterstationen, Wetterphänomenen und historischen Wetterdaten darstellt.
+
+
+Die Verwendung von Graphen in probabilistischen Datenbanken kann dazu beitragen, komplexe Wahrscheinlichkeitsmodelle zu vereinfachen und zu visualisieren und somit die Analyse und Interpretation der Daten zu erleichtern.
+
+
+
+\section{Bayes'sche Netzwerk-Methode}
+Eine Berechnungsmethode für die Verwendung von Graphen in probabilistischen Datenbanken ist die sogenannte Bayes'sche Netzwerk-Methode. Die Bayes'sche Netzwerk-Methode basiert auf dem Bayes'schen Theorem, das besagt, dass die Wahrscheinlichkeit eines Ereignisses anhand der Wahrscheinlichkeiten von vorhergehenden Ereignissen berechnet werden kann.
+
+In einem Bayes'schen Netzwerk werden die Entitäten und Beziehungen in einem probabilistischen Modell als Graph dargestellt. Jeder Knoten im Graph repräsentiert eine Entität (z. B. eine Krankheit, ein Symptom, ein Risikofaktor), während die Kanten die Beziehungen zwischen den Entitäten darstellen (z. B. "verursacht von", "abhängig von"). Die Wahrscheinlichkeiten für jede Entität und Beziehung werden als Gewichte an den Kanten des Graphs gespeichert.
+
+Um die Wahrscheinlichkeit eines Ereignisses zu berechnen, werden die Gewichte der Kanten im Graph durchlaufen, um die Wahrscheinlichkeiten der vorhergehenden Ereignisse zu berücksichtigen. Diese Wahrscheinlichkeiten werden dann nach dem Bayes'schen Theorem kombiniert, um die gesuchte Wahrscheinlichkeit zu berechnen.
+
+Beispiel: Angenommen, wir haben ein Bayes'sches Netzwerk, das die Beziehungen zwischen Krankheiten, Symptomen und Risikofaktoren darstellt. Um die Wahrscheinlichkeit für die Krankheit "Grippe" zu berechnen, können wir die Gewichte der Kanten im Graph durchlaufen, um die Wahrscheinlichkeiten für die Symptome und Risikofaktoren zu berücksichtigen, die mit der Grippe verbunden sind. Diese Wahrscheinlichkeiten werden dann nach dem Bayes'schen Theorem kombiniert, um die gesuchte Wahrscheinlichkeit für die Grippe zu berechnen.
+
+
+\section{Graph zu Datenbank}
+Ein Graph kann in einer probabilistischen Datenbank verwendet werden, um die Wahrscheinlichkeiten von Ereignissen oder Zuständen zu modellieren und zu berechnen. Die grundlegenden Schritte, um aus einem Graph eine probabilistische Datenbank zu erstellen, sind wie folgt:
+
+\begin{enumerate}
+	\item Definieren Sie die Entitäten und Beziehungen, die in der probabilistischen Datenbank modelliert werden sollen. Diese Entitäten und Beziehungen sollten aus dem Anwendungsfall stammen und die relevanten Informationen enthalten, die für die Berechnung von Wahrscheinlichkeiten benötigt werden.
+	
+	\item Erstellen Sie einen Graph, der die Entitäten und Beziehungen darstellt. Jeder Knoten im Graph repräsentiert eine Entität, während die Kanten die Beziehungen zwischen den Entitäten darstellen. Die Richtung der Kanten zeigt an, in welcher Richtung die Beziehungen verlaufen (z. B. von einem Symptom zu einer Krankheit oder von einem Risikofaktor zu einem Symptom).
+	
+	\item Fügen Sie Gewichte an die Kanten des Graphs hinzu, um die Wahrscheinlichkeiten der Entitäten und Beziehungen darzust
+\end{enumerate}
+
+\section{Graphentheorie}
+\subsection{probabilistischer Graph}
+Ein Graph mit Wahrscheinlichkeiten ist ein Diagramm, das zur Darstellung von Wahrscheinlichkeiten verwendet wird. Es kann in verschiedenen Formen vorliegen, je nachdem, welche Informationen dargestellt werden sollen. Ein häufig verwendeter Typ ist der sogenannte Balkendiagramm, bei dem die Höhe der Balken die jeweiligen Wahrscheinlichkeiten anzeigt. Ein Beispiel für ein solches Diagramm wäre ein Balkendiagramm, das die Wahrscheinlichkeiten für verschiedene Wetterbedingungen an einem bestimmten Ort darstellt. In diesem Diagramm würden die Balken die Wahrscheinlichkeiten für verschiedene Wetterbedingungen wie beispielsweise sonnig, bewölkt, regnerisch und stürmisch darstellen.
+
+
+
+\subsection{Was ist ein Graph}
+
+Ein Graph in der Informatik ist ein abstraktes Datenstruktur, die verwendet wird, um Beziehungen zwischen Objekten darzustellen. Ein Graph besteht aus einer Menge von Knoten (auch als "Vertices" bezeichnet) und Verbindungen zwischen diesen Knoten (auch als "Edges" oder "Links" bezeichnet). Die Knoten stellen die Objekte dar, während die Verbindungen die Beziehungen zwischen ihnen darstellen. Graphs können unterschiedliche Formen haben und werden in verschiedenen Bereichen der Informatik verwendet, zum Beispiel bei der Netzwerkanalyse, bei der Routenplanung oder bei der Modellierung von sozialen Netzwerken.
+
+
+
+\subsection{Beschreibung für Graphen}
+Ein Algorithmus zur Beschreibung eines probabilistischen Graphen könnte wie folgt aussehen:
+
+\begin{enumerate}
+	\item Definieren Sie eine Liste aller Knoten des Graphen und initialisieren Sie die Wahrscheinlichkeiten für jeden Knoten auf 0.
+	
+	\item Definieren Sie eine Liste aller Verbindungen des Graphen und initialisieren Sie die Wahrscheinlichkeiten für jede Verbindung auf 0.
+	
+	\item Iterieren Sie über jeden Knoten und berechnen Sie die Wahrscheinlichkeit für jeden Knoten, indem Sie die Wahrscheinlichkeiten der Verbindungen berücksichtigen, die mit diesem Knoten verbunden sind.
+	
+	
+	\item Wiederholen Sie Schritt 3, bis sich die Wahrscheinlichkeiten der Knoten nicht mehr ändern.
+	
+	\item Zeichnen Sie den Graphen mit den berechneten Wahrscheinlichkeiten als Balkendiagramm oder ähnlichem.
+	
+\end{enumerate}
+
+Dieser Algorithmus kann verwendet werden, um die Wahrscheinlichkeiten für die Knoten und Verbindungen in einem probabilistischen Graphen zu berechnen und darzustellen. Es ist jedoch wichtig zu beachten, dass dies nur ein Beispielalgorithmus ist und es möglicherweise andere, bessere Möglichkeiten gibt, diese Aufgabe zu lösen.
+
+
+\begin{enumerate}
+	\item Definiere die Klasse Graph
+	\item Definiere eine Liste vertices in der Klasse Graph, um die Vertices des Graphen zu speichern
+	\item Definiere eine Liste edges in der Klasse Graph, um die Kanten des Graphen zu speichern
+	\item Definiere eine Methode add\_vertex, um einen neuen Vertex dem Graphen hinzuzufügen. Diese Methode sollte den neuen Vertex zur Liste vertices hinzufügen.
+	\item Definiere eine Methode add\_edge, um eine neue Kante zum Graphen hinzuzufügen. Diese Methode sollte die neue Kante zur Liste edges hinzufügen.
+	\item Definiere eine Methode get\_vertices, um alle Vertices des Graphen zu erhalten. Diese Methode sollte die Liste vertices zurückgeben.
+	\item Definiere eine Methode get\_edges, um alle Kanten des Graphen zu erhalten. Diese Methode sollte die Liste edges zurückgeben.
+	\item Zum Testen: Erstelle ein neues Objekt der Klasse Graph, füge einige Vertices und Kanten hinzu und rufe dann die Methoden get\_vertices und get\_edges auf, um sicherzustellen, dass sie korrekt funktionieren.
+\end{enumerate}
